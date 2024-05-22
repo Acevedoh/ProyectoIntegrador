@@ -9,9 +9,12 @@
 
 /* Estilos de la parte superior */
 header {
-    background-color: white; /* Color de fondo de la barra de navegación */
-    color: black; /* Color del texto en la barra de navegación */
-    padding: 10px 0; /* Espaciado interior */
+    background-color: white;
+    /* Color de fondo de la barra de navegación */
+    color: black;
+    /* Color del texto en la barra de navegación */
+    padding: 10px 0;
+    /* Espaciado interior */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +65,7 @@ header div #logo {
 .navbar ul li a {
     color: black;
     text-decoration: none;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .navbar ul li a:hover {
@@ -102,7 +105,7 @@ section {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -116,7 +119,8 @@ section {
 
 /* Cambio de color al seleccionar elementos del menú */
 nav ul li a.active {
-    color: #ff7f00; /* Color de texto cuando se selecciona un elemento */
+    color: #ff7f00;
+    /* Color de texto cuando se selecciona un elemento */
 }
 
 /* Estilos de la parte inferior */
@@ -124,4 +128,51 @@ footer p {
     background-color: black;
     text-align: center;
     color: white;
+}
+
+
+/*  PLAYAS   */
+
+.playas {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.playas h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.playas article {
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.playas h2 {
+    color: #3498db;
+    margin-top: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.playas img {
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.playas article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #ddd;
 }
