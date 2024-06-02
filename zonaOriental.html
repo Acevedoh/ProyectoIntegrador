@@ -8,37 +8,79 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div class="lema">
         <h1>¡Lo mejor en viajes está aquí! <span class="underline">Descubre tus destinos favoritos para este 2024</span></h1>
     </div>
-    <header>
-       <div class="navbar">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <img id="logo" src="assets/LogoTTblanco.png" alt="Logo">
-                        </a>
-                    </li>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="zonaOccidental.html">Zona Occidental</a></li>
-                    <li><a href="zonaCentral.html">Zona Central</a></li>
-                    <li class="dropdown"> <a href="zonaOccidental.html" class="btn btn-light active">Zona Oriental</a>
-                        <ul class="dropdown-content">
-                            <li><a href="playasOriental.html">Playas</a></li>
-                            <li><a href="montanasOriental.html">Montañas</a></li>
-                            <li><a href="pueblosOriental.html">Pueblos</a></li>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <title>Navbar</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbarZonas">
+                <nav class="navbar navbar-expand-lg navbar-white bg-white">
+                    <img id="logo" src="assets/LogoTTblanco.png" alt="Logo">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="zonaOccidental.html" id="navbarDropdown" role="button" data-toggle="dropdown" 
+                                aria-haspopup="true" aria-expanded="false">
+                                    Zona Occidental
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="zonaOccidental.html">Conoce la zona Occidental</a>
+                                    <a class="dropdown-item" href="playasOccidental.html">Playas</a>
+                                    <a class="dropdown-item" href="montanasOccidental.html">Montañas</a>
+                                    <a class="dropdown-item" href="pueblosOccidental.html">Pueblos</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="zonaCentral.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Zona Central
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="zonaCentral.html">Conoce la zona Central</a>
+                                    <a class="dropdown-item" href="playasCentral.html">Playas</a>
+                                    <a class="dropdown-item" href="montanasCentral.html">Montañas</a>
+                                    <a class="dropdown-item" href="pueblosCentral.html">Pueblos</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="zonaOriental.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Zona Oriental
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="zonaOriental.html">Conoce la zona Oriental</a>
+                                    <a class="dropdown-item" href="playasOriental.html">Playas</a>
+                                    <a class="dropdown-item" href="montanasOriental.html">Montañas</a>
+                                    <a class="dropdown-item" href="pueblosOriental.html">Pueblos</a>
+                                </div>
+                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contáctanos</a>
+                        </li>
                         </ul>
-                    </li>
-                    <li><a href="contact.html">Contáctanos</a></li>
-                </ul>
-            </nav>
-        </div> 
-    </header>
-
+                    </div>
+                </nav>
+            </div> 
+        </header>
     <main>
         <table>
             <tr>
@@ -57,7 +99,7 @@
                     <h2 id="right">PUEBLOS</h2>
                 </td>
             </tr>
-            <tr>
+            <tr class="div_secc">
                 <td> <a href="zonaOrientalPlayas.html"> <img src="assets/playasOriental.jpg" alt="Imagen de playas" width="75%"> </a> </td>
                 <td> <a href="mont.Ori.html"> <img src="assets/montanasOriental.jpeg" alt="Imagen de montañas" width="70%"> </a> </td>
                 <td> <a href="zonaOrientalPueblos.html"> <img src="assets/pueblosOriental.jpg" alt="Imagen de pueblos" width="75%"> </a> </td>
@@ -69,15 +111,13 @@
                 <td> </td>
             </tr>
         </table>
-
     </main>
     <footer>
         <button>Más información</button>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984625.9064297548!2d-91.68794644375001!3d13.704971400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6331925ff23e6f%3A0x3a0c4000aaede3ac!2sOriental%20Marketplace!5e0!3m2!1sen!2ssv!4v1714689905465!5m2!1sen!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991151.9233177769!2d-90.80062866210936!3d13.977215131550198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62d83b37dc9b43%3A0x6ef4a616a76faf3e!2sEl%20Occidental!5e0!3m2!1sen!2ssv!4v1714687977810!5m2!1sen!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p>Copyright © 2024 | Torogoz Tours, El Salvador</p>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
